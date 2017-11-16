@@ -31,7 +31,7 @@ public class CsvController {
 
     @GetMapping("/")
     public String index() {
-        return "/index";
+        return "index";
     }
 
     @PostMapping("/upload")
@@ -61,6 +61,6 @@ public class CsvController {
             request.setAttribute("message", e.getMessage());
         }
 
-        return "/index";
+        return "index";
     }
 }
