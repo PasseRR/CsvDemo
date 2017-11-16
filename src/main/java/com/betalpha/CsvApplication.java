@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * application's entrance
  * @author xiehai1
  * @date 2017/11/16 11:20
  * @Copyright(c) gome inc Gome Co.,LTD
@@ -20,6 +21,10 @@ public class CsvApplication {
         SpringApplication.run(CsvApplication.class, args);
     }
 
+    /**
+     * simply check application is up or down
+     * @return echo
+     */
     @RequestMapping("/echo")
     @ResponseBody
     public String echo() {

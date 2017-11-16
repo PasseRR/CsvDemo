@@ -5,7 +5,7 @@ import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;
 
 /**
- * dao父接口
+ * parent interface for mapper
  * @author xiehai1
  * @date 2017/11/16 11:23
  * @Copyright(c) gome inc Gome Co.,LTD

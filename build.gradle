@@ -34,6 +34,7 @@ task "createDirs" << {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE"
+    compile "org.springframework.boot:spring-boot-starter-thymeleaf:1.5.2.RELEASE"
     compile "net.sourceforge.javacsv:javacsv:2.0"
     compile "mysql:mysql-connector-java:5.1.10"
     compile "com.alibaba:druid-spring-boot-starter:1.1.1"
