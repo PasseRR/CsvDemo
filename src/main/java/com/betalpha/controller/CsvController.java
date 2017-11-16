@@ -52,8 +52,6 @@ public class CsvController {
                 "itemValue3"
             );
 
-            list.forEach(item -> item.setTradingDate(tradingDate));
-
             this.timeSeriesDataService.insertList(tradingDate, list);
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
