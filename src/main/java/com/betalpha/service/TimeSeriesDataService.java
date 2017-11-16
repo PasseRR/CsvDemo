@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * TimeSeriesData service
@@ -30,12 +31,13 @@ public class TimeSeriesDataService {
      */
     @Transactional(rollbackFor = Exception.class)
     public int insertList(Date tradingDate, List<TimeSeriesData> list) {
+        final AtomicInteger insert = new AtomicInteger();
         list.forEach(item -> {
-            item.setItemId(UuidUtils.getUUID());
+            item.setItemId(UuidUtils.getUuid());
             item.setTradingDate(tradingDate);
-            this.timeSeriesDataMapper.insertSelective(item);
+            insert.addAndGet(this.timeSeriesDataMapper.insertSelective(item));
         });
 
-        return list.size();
+        return insert.get();
     }
 }

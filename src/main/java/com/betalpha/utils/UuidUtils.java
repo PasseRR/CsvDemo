@@ -16,7 +16,7 @@ public final class UuidUtils {
      * generate uuid
      * @return uuid
      */
-    public static String getUUID() {
+    public static String getUuid() {
         UUID uuid = UUID.randomUUID();
         String str = uuid.toString();
         return str.replace("-", "");
