@@ -6,7 +6,7 @@ import spock.lang.Specification
 
 
 /**
- * sepc for {@link BeanUtils}
+ * spec for {@link BeanUtils}
  * @author xiehai1
  * @date 2017/11/16 15:00
  * @Copyright ( c ) gome inc Gome Co.,LTD

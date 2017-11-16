@@ -12,7 +12,10 @@ import spock.lang.Specification
  * @Copyright ( c ) gome inc Gome Co.,LTD
  */
 @WebAppConfiguration
-@ContextConfiguration(classes = CsvApplication.class, initializers = ConfigFileApplicationContextInitializer.class)
+@ContextConfiguration(
+    classes = CsvApplication.class,
+    initializers = ConfigFileApplicationContextInitializer.class
+)
 class BaseSpec extends Specification {
 
 }
