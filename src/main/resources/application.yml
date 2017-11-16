@@ -18,7 +18,7 @@ spring:
     test-while-idle: true
 
 mybatis:
-  type-aliases-package: cn.com.gome.gsr.cap.model
+  type-aliases-package: com.betalpha.model
   mapper-locations: classpath:mapper/*Mapper.xml
 mapper:
   mappers:
