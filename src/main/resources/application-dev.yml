@@ -1,0 +1,9 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://10.112.68.171:3306/o2m-cap?useUnicode=true&amp;characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+    username: o2m300
+    password: o2m300
+
+logging:
+  path: C://temp/log
